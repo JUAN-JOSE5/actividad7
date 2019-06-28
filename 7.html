@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 13em);
+            width: 40%;
+            margin: 0;
+            margin: auto;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .uno {
+            width: 100%;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            background:#06B3B3;
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+        .uno ul{
+            padding-left: 1.5em;
+        }
+        .uno a{
+            text-decoration: none;
+            font-weight: lighter;
+            color: white;
+        }
+
+        .dos{
+            width: 100%;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            box-sizing: border-box;
+            padding: 2em;
+            border: 3px solid black;
+            background: orange;
+        }
+        .dos #tit{
+            box-sizing: border-box;
+            padding-right: 1em;
+        }
+        .dos #num{
+            font-size: 3em;            
+        }
+        .dos  #december{
+            padding-right: 3em;
+        }
+
+        .tres{
+            width: 100%;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background: tomato;
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+        .tres ol {
+            padding-left: 1.5em;
+        }
+        h3{
+            padding-left: 1em;
+            padding-top: 1em;
+            font-weight: lighter;
+            margin: 0;
+        }
+
+        .cuarto{
+            width: 100%;
+            background: #f2f2f2;
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+        .cuarto p{
+            margin: 0;  
+            font-weight: bold;
+            padding-right: 1em;
+            font-size: 2em;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="uno">
+        <h3>Features</h3>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div class="dos" dir="rtl">
+        <span id="tit">Important Interview</span><br>
+        <span>4:00 - 3:00</span><br>
+        <span id="december">December </span>
+        <span id="num">15</span>
+    </div>
+    <div class="tres">
+        <h3>TODO</h3>
+        <ol>
+            <li>Build websites</li>
+            <li>Buildd apps</li>
+            <li>Build games</li>
+        </ol>
+    </div>
+    <div class="cuarto">
+        <img src="https://www.researchgate.net/profile/Jonathan_Romero3/publication/308500373/figure/fig4/AS:409413874667525@1474623282636/Figura-6-Diagrama-de-barras-que-muestra-el-impacto-de-los-escenarios-sobre-el-caudal-en.png" alt="diagrama" width="150px"><br>
+        <p dir="rtl">4800</p>
+    </div>
+</body>
+</html>
